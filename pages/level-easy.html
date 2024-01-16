@@ -1,0 +1,165 @@
+<!-- 
+    Credits to:
+    - Frieship on YouTube: https://www.youtube.com/watch?v=biOMz4puGt8
+    - fireship-io on GitHub: https://github.com/fireship-io/222-responsive-icon-nav-css/tree/master
+    - Dr. Angela Yu on Udemy: https://www.udemy.com/course/the-complete-web-development-bootcamp/
+ -->
+
+ <!DOCTYPE html> 
+ <html lang="eng">
+     
+ <head>
+ 
+     <meta charset="UTF-8" />
+     <title>CSS Pocket Guide: Chapter 1</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <link rel="stylesheet" href="../styles/le-style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Lato&display=swap" rel="stylesheet">
+ 
+ </head>
+ 
+ <body>
+ 
+     <nav class="navbar">
+         <ul class="💪">
+             <li class="logo">
+                 <a href="#" class="nav-link">
+                     <span class="logo-text">CSS Pocket Guide</span>
+                 </a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a href="./index.html" class="nav-link icon-container">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                         <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+                     </svg>
+                     <span class="link-text icon-text">Homepage</span>
+                 </a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a href="./level-easy.html" class="nav-link">
+                     <p class="link-text">1. CSS: Easy</p>
+                 </a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a href="./level-medium.html" class="nav-link">
+                     <p class="link-text">2. CSS: Normal</p>
+                 </a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a href="./level-hard.html" class="nav-link">
+                     <p class="link-text">3. CSS: Hard</p>
+                 </a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a href="./chapter-flexbox.html" class="nav-link">
+                     <p class="link-text">4. Flexbox</p>
+                 </a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a href="./chapter-grid.html" class="nav-link">
+                     <p class="link-text">5. Grid</p>
+                 </a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a href="./chapter-bootstrap.html" class="nav-link">
+                     <p class="link-text">6. Bootstrap</p>
+                 </a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a href="./visual-principles.html" class="nav-link">
+                     <p class="link-text">7. Colors, fonts, UI, UX</p>
+                 </a>
+             </li>
+ 
+             <li class="nav-item">
+                 <a href="#" class="nav-link icon-container">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
+                         <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                         <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
+                     </svg>
+                     <span class="link-text icon-text">Dark Theme</span>
+                 </a>
+             </li>
+         </ul>
+     </nav>
+ 
+     <main>
+         <div class="container">
+             <p class="logo-small">CSS Pocket Guide</p>
+             <p class="upper-text">1. CSS: Easy</p>
+
+             <div class="adding-text-1">You can add CSS to your HTML file in three ways:
+                <ol>
+                    <li>inline</li>
+                    <li>internal</li>
+                    <li>external</li>
+                </ol>
+            </div>
+            <div class="adding-text-2">To select particular element to style you can use one of many CSS selector:
+                <ul>
+                    <li>HTML_tag_name - select all HTML elements of that type</li>
+                    <li>.class_name - select only elements with specified class name</li>
+                    <li>#index_name - select only elements with specified index name (please note that index name should be unique and given to
+                        only one element)
+                    </li>
+                    <li>* - select all elements</li>
+                    <li>element_name[value="number"] - select elements with particular value atribute</li>
+                </ul>
+            </div>
+            <div class="adding-text-3">
+                <p>We can specify color of background or text in multiple ways. It can be for example just plain name of a color,
+                    its hex code or RGB values.</p>
+            </div>
+            <div class="adding-text-4">
+                <p>In CSS you can not only change the color of the font, but also import new fonts, change their size, weight, align them
+                    or capitalize all the letters. It is recommended to use rem units instead of pixels while specifying font size, because
+                    the first ones are based on the size preferrably declared in :root element. So if we would want to change font sizes, but 
+                    keeping their proportions, we change value only in one place and not in multiple sections of our file. We can also refer
+                    just to superior element in HTML hierarchy (for example body section) by using em units.</p>
+            </div>
+            <div class="adding-text-5">
+                <p>Examle of application of the box model:</p>
+            </div>
+
+             <ul class="adding-img-1">
+                <li><img src="../images/le-inline.png" alt="image of inline import of style to HTML"></li>
+                <li><img src="../images/le-internal.png" alt="image of internal import of style to HTML"></li>
+                <li><img src="../images/le-external.png" alt="image of external import of style to HTML"></li>
+             </ul>
+             <ul class="adding-img-2">
+                <li><img src="../images/le-general-selector.png" alt="image of using general selector"></li>
+                <li><img src="../images/le-class-selector.png" alt="image of using class selector"></li>
+                <li><img src="../images/le-other-selectors.png" alt="image of using other selectors"></li>
+             </ul>
+             <div class="adding-img-3"><img src="../images/le-colors.png" alt="image of adding colors to CSS"></div>
+             <ul class="adding-img-4">
+                <li><img src="../images/le-font-import.png" alt="image of importing new font"></li>
+                <li><img src="../images/le-font-general.png" alt="image of general font settings in a root element"></li>
+                <li><img src="../images/le-font-specific.png" alt="image of specific font settings"></li>
+             </ul>
+             <div class="adding-img-5"><img src="../images/le-box-model.png" alt="image of applying the box model"></div>
+
+             <div class="le-footer">
+                 <p class="footer-header">I created this website thanks to:</p>
+                     <ul class="footer-content">
+                      <li>🔥Frieship on YouTube: https://www.youtube.com/watch?v=biOMz4puGt8</li>
+                      <li>🔥fireship-io on GitHub: https://github.com/fireship-io/222-responsive-icon-nav-css/tree/master</li>
+                      <li>👩‍🎓Dr. Angela Yu on Udemy: https://www.udemy.com/course/the-complete-web-development-bootcamp/</li>
+                     </ul> 
+             </div>
+         </div>
+     </main>
+ 
+ </body>
+ 
+ </html>
