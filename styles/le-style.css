@@ -1,0 +1,955 @@
+:root { 
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    --text-primary: black;
+    --text-secondary: #FFEA94;
+    --bg-primary: #5C5E80;
+    --bg-secondary: #FFF7D9;
+    --bg-terciary: #141418;
+    --transition-speed: 100ms;
+}
+
+body {
+    color: black;
+    background-color: var(--bg-secondary);
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: var(--bg-secondary);
+}
+
+.le-footer {
+    background-color: var(--bg-primary);
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* NAVBAR -------------------------------------------------------------------------------------------- */
+
+    body::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: #5C8067;
+    }
+      
+    body::-webkit-scrollbar-thumb {
+        background: #9FA1D4;
+    }
+    
+    main {
+        margin-bottom: 5rem;
+    }
+
+    .navbar {
+        position: fixed;
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        background-color: #5C8067;
+    }
+    
+   .💪 {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 100%;
+    }
+
+    .nav-item {
+        width: 100%;
+    }
+    
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: var(--transition-speed), color 50ms;
+        height: 5rem;
+        padding: 0 1rem;
+    }
+    
+    .nav-link:hover {
+        background: var(--text-secondary);
+        color: #5C8067;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .icon-text {
+        display: none;
+    }
+
+    .link-text {
+        font-size: 0.5rem;
+    }
+    
+    .nav-link svg {
+        width: 1rem;
+        min-width: 1rem;
+    }
+    
+    /* GRID -------------------------------------------------------------------------------------------- */
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+            "logo-1 logo-2"
+            "content-1 content-2"
+            "content-3 content-4"
+            "content-5 content-6"
+            "content-7 content-8"
+            "content-9 content-10"
+            "content-11 content-12"
+            "footer-1 footer-2";
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .upper-text { 
+        grid-area: content-1 / content-1 / content-1 / content-2; 
+        font-family: 'Bodoni Moda', serif;
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 2rem;
+        letter-spacing: 0.25ch;
+        margin: 1rem;
+    }
+
+    .adding-text-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-area: content-3; 
+        margin: 1rem; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .adding-img-1 {
+        grid-area: content-4; 
+        list-style: none;
+        padding: 0;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adding-img-1 > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .adding-img-1 > li > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* SELECTORS -------------------------------------------------------------------------------------------- */
+
+    .adding-text-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-area: content-6;  
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        width: 100%;
+        letter-spacing: 0.1ch;
+    }
+
+    .adding-text-2 > ul {
+        margin-right: 1rem;
+    }
+
+    .adding-img-2 {
+        grid-area: content-5; 
+        list-style: none;
+        padding: 0;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adding-img-2 > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .adding-img-2 > li > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* COLORS -------------------------------------------------------------------------------------------- */
+
+    .adding-text-3 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        grid-area: content-7; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        letter-spacing: 0.1ch;
+        margin: 1rem;
+        width: 100%;
+    }
+
+    .adding-img-3 {
+        grid-area: content-8; 
+        list-style: none;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .adding-img-3 > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FONTS -------------------------------------------------------------------------------------------- */
+
+    .adding-text-4 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        grid-area: content-10; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        width: 90%;
+        letter-spacing: 0.1ch;
+        margin: 1rem;
+    }
+
+    .adding-img-4 {
+        grid-area: content-9; 
+        list-style: none;
+        padding: 0;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adding-img-4 > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .adding-img-4 > li > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* BOX MODEL -------------------------------------------------------------------------------------------- */
+
+    .adding-text-5 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        grid-area: content-11; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1.5rem;
+        width: 100%;
+        letter-spacing: 0.2ch;
+        margin: 1rem;
+    }
+
+    .adding-img-5 {
+        grid-area: content-12; 
+        list-style: none;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .adding-img-5 > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FOOTER -------------------------------------------------------------------------------------------- */
+    
+    .le-footer { 
+        grid-area: footer-1 / footer-1 / footer-1 / footer-2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-header {
+        display: flex;
+        justify-content: center;
+        font-family: 'Bodoni Moda', serif;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+        letter-spacing: 0.25ch;
+        font-size: 0.75rem;
+    }
+
+    .footer-content {
+        margin-top: 0;
+        font-size: 0.5rem;
+        list-style: none;
+        text-align: center;
+    }
+
+    .logo-small {
+        grid-area: logo-1 / logo-1 / logo-1 / logo-2;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        letter-spacing: 1ch;
+        font-family: 'Bodoni Moda', serif;
+        text-transform: uppercase;
+        color: var(--text-secondary);
+        background-color: #5C8067;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+
+    /* NAVBAR -------------------------------------------------------------------------------------------- */
+
+    body::-webkit-scrollbar {
+        width: 0.65rem;
+    }
+
+    body::-webkit-scrollbar-track {
+        background: var(--bg-primary);
+    }
+      
+    body::-webkit-scrollbar-thumb {
+        background: #9FA1D4;
+    }
+    
+    main {
+        margin-left: 10rem;
+    }
+    
+    .navbar {
+        position: fixed;
+        height: 100vh;
+        width: 10rem;
+        top: 0;
+        background-color: var(--bg-primary);
+    }
+    
+    .💪 {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .nav-item {
+        width: 100%;
+    }
+    
+    .nav-item:last-child {
+        margin-top: auto;
+    }
+    
+    .nav-link {
+        display: flex;
+        align-items: center;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: var(--transition-speed), color 50ms;
+    }
+    
+    .nav-link:hover {
+        background: var(--text-secondary);
+        color: var(--bg-primary);
+    }
+    
+    .link-text {
+        margin-left: 0.5rem; 
+        letter-spacing: 0.075rem;
+        font-size: 0.75rem;
+    }
+    
+    .logo-text {
+        margin-left: 0.5rem; 
+    }
+    
+    .nav-link svg {
+        width: 1rem;
+        min-width: 1rem;
+    }
+    
+    .icon-text {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+    
+    .icon-container {
+        padding: 0.5rem;
+    }
+    
+    .logo {
+        font-family: 'Bodoni Moda', serif;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--text-secondary);
+        background: var(--bg-primary);
+        font-size: 1.25rem;
+        letter-spacing: 1ch;
+        width: 100%;
+        padding-bottom: 0.5rem;
+        pointer-events: none;
+    }
+
+    /* GRID -------------------------------------------------------------------------------------------- */
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+            "content-1 content-2"
+            "content-3 content-4"
+            "content-5 content-6"
+            "content-7 content-8"
+            "content-9 content-10"
+            "content-11 content-12"
+            "footer-1 footer-2";
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .upper-text { 
+        grid-area: content-1 / content-1 / content-1 / content-2; 
+        font-family: 'Bodoni Moda', serif;
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 3rem;
+        letter-spacing: 0.25ch;
+        margin: 1rem;
+    }
+
+    .adding-text-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-area: content-3; 
+        margin: 1rem; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .adding-img-1 {
+        grid-area: content-4; 
+        list-style: none;
+        padding: 0;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adding-img-1 > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .adding-img-1 > li > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* SELECTORS -------------------------------------------------------------------------------------------- */
+
+    .adding-text-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-area: content-6; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        width: 100%;
+        letter-spacing: 0.1ch;
+    }
+
+    .adding-text-2 > ul {
+        margin-right: 1rem;
+    }
+
+    .adding-img-2 {
+        grid-area: content-5; 
+        list-style: none;
+        padding: 0;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adding-img-2 > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .adding-img-2 > li > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* COLORS -------------------------------------------------------------------------------------------- */
+
+    .adding-text-3 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        grid-area: content-7; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        letter-spacing: 0.1ch;
+        margin: 1rem;
+        width: 100%;
+    }
+
+    .adding-img-3 {
+        grid-area: content-8; 
+        list-style: none;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .adding-img-3 > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FONTS -------------------------------------------------------------------------------------------- */
+
+    .adding-text-4 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        grid-area: content-10; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        width: 90%;
+        letter-spacing: 0.1ch;
+        margin: 1rem;
+    }
+
+    .adding-img-4 {
+        grid-area: content-9; 
+        list-style: none;
+        padding: 0;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adding-img-4 > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .adding-img-4 > li > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* BOX MODEL -------------------------------------------------------------------------------------------- */
+
+    .adding-text-5 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        grid-area: content-11; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1.75rem;
+        width: 100%;
+        letter-spacing: 0.25ch;
+        margin: 1rem;
+    }
+
+    .adding-img-5 {
+        grid-area: content-12; 
+        list-style: none;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .adding-img-5 > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FOOTER -------------------------------------------------------------------------------------------- */
+    
+    .le-footer { 
+        grid-area: footer-1 / footer-1 / footer-1 / footer-2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-header {
+        display: flex;
+        justify-content: center;
+        font-family: 'Bodoni Moda', serif;
+        margin-bottom: 0.5rem;
+        letter-spacing: 0.5ch;
+    }
+
+    .footer-content {
+        margin-top: 0;
+        font-size: 0.75rem;
+        list-style: none;
+        text-align: center;
+    }
+
+    .logo-small {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 992px) {
+
+    /* NAVBAR -------------------------------------------------------------------------------------------- */
+    
+    body::-webkit-scrollbar {
+        width: 0.75rem;
+    }
+    
+    body::-webkit-scrollbar-track {
+        background: var(--bg-primary);
+    }
+      
+    body::-webkit-scrollbar-thumb {
+        background: #9FA1D4;
+    }
+
+    main {
+        margin-left: 20rem;
+    }
+    
+    .navbar {
+        position: fixed;
+        height: 100vh;
+        width: 20rem;
+        top: 0;
+        background-color: var(--bg-primary);
+    }
+    
+    .💪 {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+    
+    .nav-item {
+        width: 100%;
+    }
+    
+    .nav-item:last-child {
+        margin-top: auto;
+    }
+    
+    .nav-link {
+        display: flex;
+        align-items: center;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: var(--transition-speed), color 50ms;
+    }
+    
+    .nav-link:hover {
+        background: var(--text-secondary);
+        color: var(--bg-primary);
+    }
+    
+    .link-text {
+        margin-left: 1rem; 
+        letter-spacing: 0.35rem
+    }
+    
+    .logo-text {
+        margin-left: 1rem; 
+    }
+    
+    .nav-link svg {
+        width: 2rem;
+        min-width: 2rem;
+    }
+    
+    .icon-text {
+        font-size: 1.25rem;
+        text-transform: uppercase;
+    }
+    
+    .icon-container {
+        padding: 1rem;
+    }
+    
+    .logo {
+        font-family: 'Bodoni Moda', serif;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--text-secondary);
+        background: var(--bg-primary);
+        font-size: 2.5rem;
+        letter-spacing: 1ch;
+        width: 100%;
+        padding-bottom: 1rem;
+        pointer-events: none;
+    }
+
+    /* GRID -------------------------------------------------------------------------------------------- */
+
+    .container {
+        display: grid;
+        grid-template-areas: 
+            "content-1 content-2"
+            "content-3 content-4"
+            "content-5 content-6"
+            "content-7 content-8"
+            "content-9 content-10"
+            "content-11 content-12"
+            "footer-1 footer-2";
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .upper-text { 
+        grid-area: content-1 / content-1 / content-1 / content-2; 
+        font-family: 'Bodoni Moda', serif;
+        text-align: left;
+        text-transform: capitalize;
+        font-size: 4rem;
+        letter-spacing: 0.5ch;
+        margin: 1rem;
+    }
+
+    .adding-text-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-area: content-3; 
+        margin: 1rem; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1.75rem;
+        width: 100%
+    }
+
+    .adding-img-1 {
+        grid-area: content-4; 
+        list-style: none;
+        padding: 0;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adding-img-1 > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .adding-img-1 > li > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* SELECTORS -------------------------------------------------------------------------------------------- */
+
+    .adding-text-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        grid-area: content-6; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        width: 100%;
+        letter-spacing: 0.1ch;
+    }
+
+    .adding-text-2 > ul {
+        margin-right: 1rem;
+    }
+
+    .adding-img-2 {
+        grid-area: content-5; 
+        list-style: none;
+        padding: 0;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adding-img-2 > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .adding-img-2 > li > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* COLORS -------------------------------------------------------------------------------------------- */
+
+    .adding-text-3 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        grid-area: content-7; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        width: 100%;
+        letter-spacing: 0.1ch;
+        margin: 1rem;
+    }
+
+    .adding-img-3 {
+        grid-area: content-8; 
+        list-style: none;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .adding-img-3 > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FONTS -------------------------------------------------------------------------------------------- */
+
+    .adding-text-4 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        grid-area: content-10; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 1rem;
+        width: 90%;
+        letter-spacing: 0.1ch;
+        margin: 1rem;
+    }
+
+    .adding-img-4 {
+        grid-area: content-9; 
+        list-style: none;
+        padding: 0;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .adding-img-4 > li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+
+    .adding-img-4 > li > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* BOX MODEL -------------------------------------------------------------------------------------------- */
+
+    .adding-text-5 {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        grid-area: content-11; 
+        width: clamp(45ch, 100%, 75ch);
+        font-size: 2rem;
+        width: 100%;
+        letter-spacing: 0.5ch;
+        margin: 1rem;
+    }
+
+    .adding-img-5 {
+        grid-area: content-12; 
+        list-style: none;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        margin: 1rem;
+    }
+
+    .adding-img-5 > img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* FOOTER -------------------------------------------------------------------------------------------- */
+    
+    .le-footer { 
+        grid-area: footer-1 / footer-1 / footer-1 / footer-2;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-header {
+        display: flex;
+        justify-content: center;
+        font-size: 1.25rem;
+        font-family: 'Bodoni Moda', serif;
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.75ch;
+    }
+
+    .footer-content {
+        margin-top: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    .logo-small {
+        display: none;
+    }
+
+}

@@ -1,0 +1,39 @@
+
+
+
+/* Group of selectors is separeted by a comma. */
+.class-1, h1 {
+  background-color: navajowhite;
+}
+
+/* Child combinator: ">" - this selector points 
+    to a direct child of selected element, both
+    specified by the user */
+.class-2 > p {
+  background-color: peru;
+}
+
+/* Descendent combinator: " " - this selector points
+    to all descendants of the first specified element
+    by giving the name of descendants to affect in
+    the second element. Contrary to child combinator,
+    affected elements don't need to be direct descendants
+    ot the first given element. */
+.class-3 img {
+  background-color: aliceblue;
+}
+
+/* Chained selectors - concatenation of different selector types
+    by writing them without spaces. This results in selecting
+    only items fulfilling all the requirements. Please note that
+    plain HTML tags need to be written first because they
+    don't have they specific prefix that would separate them from the
+    following elements. */
+p.class-4#index-1 {
+  background-color: wheat;
+}
+
+/* Multiple Combiners */
+ul p.done {
+  font-size: 0.5rem;
+}
