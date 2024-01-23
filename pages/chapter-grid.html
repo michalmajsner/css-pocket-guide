@@ -11,9 +11,9 @@
  <head>
  
      <meta charset="UTF-8" />
-     <title>CSS Pocket Guide: Chapter 5</title>
+     <title>CSS Pocket Guide: Chapter 7</title>
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <link rel="stylesheet" href="../styles/cg-style.css">
+     <link rel="stylesheet" href="../styles/vp-style.css">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Lato&display=swap" rel="stylesheet">
@@ -82,12 +82,11 @@
              </li>
  
              <li class="nav-item">
-                 <a href="#" class="nav-link icon-container">
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-moon-stars-fill" viewBox="0 0 16 16">
-                         <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
-                         <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.73 1.73 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.73 1.73 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.73 1.73 0 0 0 1.097-1.097zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.16 1.16 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.16 1.16 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732z"/>
-                     </svg>
-                     <span class="link-text icon-text">Dark Theme</span>
+                 <a href="#" class="nav-link icon-container switchTheme">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-circle-half" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 0 8 1zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16"/>
+                    </svg>
+                     <span class="link-text icon-text">Alter Theme</span>
                  </a>
              </li>
          </ul>
@@ -95,24 +94,97 @@
  
      <main>
          <div class="container">
-             <p class="logo-small">CSS Pocket Guide</p>
-             <p class="upper-text">5. Grid</p>
+            <p class="logo-small">CSS Pocket Guide</p>
+            <p class="upper-text">7. Colors, fonts, UI, UX</p>
 
-            <div class="adding-text-1">
-                <p>The CSS Grid is very powerful tool and you can use it in multiple different ways. One example of how it can be utilized
-                    to create your website layout is shown on the right, in a snippet of code on which the page named "CSS: Hard" of 
-                    this project is based on. Please note that 1fr is the fractional unit of space given to be shared by Grid. So if we
-                    use "grid-template-columns: 1fr 1fr;" we just communicate that the space occupied by grid will be divided into two
-                    columns, each 50% (or 1/2) width. As you can see in the picture, on the example of image, one element can span on 
-                    multiple grid cells. By using "grid-area: content-7 / content-7 / content-11 / content-7;" command we specify, that
-                    occupied area should be starting at row 7th, column 7th and end at the row 11th and column 7th, which the image does.
-                </p>
+            <div class="adding-text-1">General rules of applying colors to a website:
+                <ol>
+                    <li>The color should match the content and the tone of the page.
+                        For example, you shouldn't apply pink to online shop with
+                        military footwear. 
+                    </li>
+                    <li>Different colors have different moods. Red is love, energy, intensity.
+                        Yellow is about joy, intelect, attention, but it is good only for the
+                        things you don't look very often and for very long time, because then
+                        it can be tiresome. Green is connected with freshness, safety, growth.
+                        Blue means stability, confidence and calmness. And last but not least,
+                        violet is roylaty, wealth and femininity.
+                    </li>
+                    <li>We should use about 2 - 3 colors on our page.</li>
+                    <li>We can match colors basing on different rules, like triad or square.
+                        Another method of composing color palett are analogous colors. This is 
+                        the way if we want harmonious design, which is good for matches of navbars 
+                        and main content or for logos and their backgrounds. If we want strong contrast
+                        we should aim at complementary colors. They are not good for font - background
+                        mix, but great for logos and icons. 
+                    </li>
+                </ol>
             </div>
-
-             <ul class="adding-img-1">
-                <li><img src="../images/cg-grid.png" alt="image of hidden grid display of the website"></li>
-                <li><img src="../images/cg-grid-code.png" alt="image of code making the grid"></li>
-             </ul>
+            <div class="adding-text-2">General rules of typography (choosing a font):
+                <ol>
+                    <li>Serif fonts are divided into 4 families: Old Style (e.g. Adobe Jenson),
+                        Transitional (e.g. Baskerville), Modern (e.g. Didot) and Slab-Serif 
+                        (e.g. American Typewriter). This type of fonts we can use if we want
+                        emphesize that is something is serious, old-washioned (in a good way),
+                        respectible, traditional, stable, trustworthy, stylish etc. The more 
+                        modern serif font, the bigger contrast between thin and thick parts of the 
+                        letters.
+                    </li>
+                    <li>Sans-serif fonts are also divided into 4 families: Grotesque (e.g. 
+                        News Gothic), Neo-Grotesque (e.g. Helvetica), Humanist (e.g. Gill Sans),
+                        and Geometric (e.g. Futura). They are characterized by numerous right angles
+                        and very high readability (especially Humanist fonts). Sans-serif fonts looks
+                        firendly, modern, contemporary, tender, straightforward.
+                    </li>
+                    <li>We should use two types of fonts on our websites, to make them more interesting,
+                        but at the same time not cluttered.
+                    </li>
+                    <li>You should never combine supermodern and superold fonts.</li>
+                    <li>Combining one serif and one sans-serif font is a good idea - 
+                        for example one on the header and the other on main text.
+                    </li>
+                    <li>To make your website more interesting you can also use different
+                        font weights in headers, body text etc.
+                    </li>
+                    <li>The forbidden fonts: Comic Sans, Papyrus (unless it is for the
+                        Avatar movie), Viner and Curlz. Jokes aside, you can use them,
+                        but only for specific purposes when you know what you are doing 
+                        and their tone matches the content.
+                    </li>
+                </ol>
+            </div>
+            <div class="adding-text-3">User Interface Design rules:
+                <ol>
+                    <li>Hierarchy - the bigger, the more colorful will be seen first.</li>
+                    <li>Layout - should be diverse, with relatively small text blocks, each
+                        row of text should be from 45 to 75 characters long. Text should be 
+                        also composed with images.
+                    </li>
+                    <li>Text alignment - every text block should be align in the same way, for example
+                        to the center or left, and not that one block is on the left, next in the center
+                        etc. We should also minimize the number of base lines, to whick we align text.
+                        Base lines could be for example grid mesh.
+                    </li>
+                    <li>White space - it should be add to website in a sensible matter, to expose
+                        content and make it feel more special, instead of cluterred one on another. 
+                    </li>
+                    <li>We should adjust the UI to the target audience of our webpage.</li>
+                </ol>
+            </div>
+            <div class="adding-text-4">User Experience Design rules
+                <ol>
+                    <li>Simpler is better.</li>
+                    <li>Follow the paths (habits) of users.</li>
+                    <li>Visual and functional coherence.</li>
+                    <li>Apply content in consonance with users' reading patterns.</li>
+                    <li>Design responsive websites, that will be beautiful on PC, laptops,
+                        tablets and mobile phones.
+                    </li>
+                    <li>Do not use the dark patterns: it is forbidden to trick the user into actions
+                        he or she would never voluntarily perform. 
+                    </li>
+                </ol>
+            </div>
 
              <div class="le-footer">
                  <p class="footer-header">I created this website thanks to:</p>
@@ -125,6 +197,7 @@
          </div>
      </main>
  
+     <script defer src="../theme.js"></script>
  </body>
  
  </html>
