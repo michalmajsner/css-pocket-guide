@@ -5,7 +5,7 @@
     --text-secondary: #FFEA94;
     --bg-primary: #5C5E80;
     --bg-secondary: #FFF7D9;
-    --bg-terciary: #141418;
+    --bg-terciary: #1f1f1f;
     --transition-speed: 100ms;
 }
 
@@ -16,8 +16,13 @@ body {
     padding: 0;
 }
 
-.main {
+.light {
     background-color: var(--bg-secondary);
+}
+
+.dark {
+    background-color: var(--bg-terciary);
+    color: var(--bg-secondary) !important;
 }
 
 .le-footer {
